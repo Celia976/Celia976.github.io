@@ -1,0 +1,11 @@
+:root {
+  --color-color1: #94E2E3;   /*verde agua*/
+  --color-color2: #67b7b8;  /*celeste*/
+  --color-color3: #86BFB9;  /*verde*/
+  --color-color4: #12655B;   /*verde oscuro*/ 
+  --color-color5: #ffffff;   /*fondo*/
+  --color-color6: #222;    /*texto*/
+  --color-color7:    #f0f8ff;
+  --fuente-titulos: 'Lobster', cursive;
+  --fuente-contenido: 'Lato', sans-serif;
+}

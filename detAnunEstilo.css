@@ -1,0 +1,162 @@
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--color-color7); 
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  color: #333;
+}
+
+aside {
+  display : flex;
+  flex-direction : column;
+}
+
+main h2 {
+  text-align: center;
+  color: var(--color-color4);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+main h3 {
+  color: var(--color-color2);
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid var(--color-color4);
+  padding-bottom: 0.3rem;
+}
+
+
+figure {
+  text-align: center;
+ 
+}
+
+figure img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+section p {
+  margin: 0.5rem 0;
+}
+
+section ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  padding: 0;
+}
+
+section ul li {
+  margin: 0.5rem 0;
+}
+
+
+section a img {
+ width: 150px;  
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section a img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+main a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--color-color4);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  transition: background 0.3s;
+  margin: 0.5rem 0;
+}
+
+ .boton-eliminar {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--color-color4);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  transition: background 0.3s;
+  margin: 0.5rem 0;
+}
+
+main a:hover {
+  background-color: var(--color-color2);
+}
+
+@media screen and (min-width: 1025px) {
+
+ main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 1200px; 
+    width: 95%; 
+    margin: 0 auto;
+    gap: 1.5rem;
+}
+
+
+aside.contenedor {
+    display: flex;
+    flex-direction: row; 
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+}
+
+
+aside.contenedor figure {
+    flex: 0 0 auto;
+    max-width: 500px;
+}
+
+aside.contenedor figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+aside.contenedor .caracteristicas {
+   flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+aside.contenedor .datos {
+   flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+aside.contenedor .miniaturas {
+    flex-basis: 100%;
+}
+
+aside.contenedor p,
+aside.contenedor ul {
+    margin: 0;
+}
+
+}

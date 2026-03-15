@@ -1,0 +1,260 @@
+
+@page {
+  size: A4;
+  margin: 2cm;
+}
+
+:root {
+  --color-fondo: #ffffff;
+  --color-texto: #000000;
+  --fuente-titulos: 'Times New Roman', serif;
+  --fuente-contenido: 'Georgia', serif;
+}
+
+* {
+  color: var(--color-texto) !important;
+  background: var(--color-fondo) !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  transition: none !important;
+  font-family: var(--fuente-contenido);
+  border-radius: 0 !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Cincoanuncios button,
+.nuevoAnuncio,
+button,
+input,
+select,
+nav,
+header form,
+.enlaces-usuario,
+.main-busqueda,
+footer { 
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+main {
+  display: block; 
+  font-size: 12pt;
+  line-height: 1.5;
+  margin: 1em auto; 
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  background: #fff;
+  color: #000;
+  page-break-inside: auto;
+}
+
+main p:first-of-type {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+main article {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 1em;
+  margin-bottom: 1em;
+  page-break-inside: avoid;
+}
+
+main ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+main ul li {
+  padding: 0.3rem 0;
+  border-bottom: none;
+}
+
+main ul li strong {
+  color: #000;
+  font-weight: bold;
+}
+
+main h2 {
+  text-align: center;
+  color: #000;
+  font-size: 1.3rem;
+  margin: 0.3em 0;
+  font-weight: bold;
+}
+
+main h3 {
+  color: #000;
+  font-size: 1.1rem;
+  margin: 0.2em 0;        
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.2em;
+}
+
+main p {
+  margin: 0.2em 0;        
+}
+
+main article {
+  padding: 0.5em;         
+  margin-bottom: 0.5em;   
+}
+
+aside.contenedor {
+  display: block;
+  width: 100%;
+  margin-top: 0.5em;
+  page-break-inside: auto;
+}
+
+aside.contenedor figure {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+aside.contenedor figure img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+aside.contenedor .caracteristicas,
+aside.contenedor .datos {
+  margin-top: 1em;
+  padding: 0.5em 0;
+  border-top: 1px solid #000;
+}
+
+aside.contenedor .miniaturas {
+  margin-top: 1em;
+}
+
+aside.contenedor .miniaturas img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin: 0.2em;
+  border-radius: 0;
+}
+
+.contenedor_resultados {
+  display: table; 
+  width: 100%;
+  padding: 1em;
+  text-align: left;
+  page-break-inside: avoid;
+}
+
+.resultados {
+  display: table-row;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 1em;
+  margin-bottom: 1em;
+  page-break-inside: avoid;
+}
+
+.resultados img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  margin-bottom: 0.3em;
+}
+
+.resultados h3 {
+  color: #000;
+  margin-top: 0.3em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.resultados p {
+  color: #000;
+  margin-top: 0.3em;
+  font-size: 0.9em;
+}
+
+.volverAtras {
+  display: inline-block;
+  text-decoration: underline;
+  color: #000;
+  font-weight: normal;
+  padding: 0;
+  margin: 1em 0;
+  background: none;
+  border: none;
+}
+
+form.formBusqueda {
+  display: block !important;
+  visibility: visible !important;
+  height: auto !important;
+  overflow: visible !important;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a::after {
+  content: " (" attr(href) ")";
+  font-size: 0.8em;
+}
+
+header,
+footer {
+  display: block !important;
+  visibility: visible !important;
+  background: none !important;
+  color: #000 !important;
+  text-align: center;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+header h1 {
+  font-family: var(--fuente-titulos);
+  font-size: 1.4em;
+  margin: 0.3em 0;
+  color: #000;
+}
+
+footer {
+  font-size: 0.9em;
+  margin-top: 2em;
+}
+
+article, section, div, header, footer,
+h2, h3, p, ul, li, figure, aside, main {
+  page-break-inside: avoid;
+}
+
+body::after {
+  content: "Fuente: " attr(data-url);
+  display: block;
+  text-align: right;
+  font-size: 9pt;
+  margin-top: 2em;
+}
+
+html, body {
+  height: auto;
+  overflow: visible;
+}

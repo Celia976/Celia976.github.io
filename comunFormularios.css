@@ -1,0 +1,161 @@
+main {
+    background-color: var(--color-color5);
+}
+
+h2 {
+    text-align:center;
+    margin-top: 10px;
+    color: var(--color-color4);
+}
+
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--color-color5);
+  border-radius: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+fieldset {
+  border: 2px solid var(--color-color4);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--color-color4);
+  padding: 0 5px;
+}
+
+form p label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: var(--color-color4);  
+}
+
+form p input, form p select, form p textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid var(--color-color3);
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+.fotos input[type="file"] {
+  border: 1px solid var(--color-color3);
+  border-radius: var(--radius);
+  padding: 0.6rem;
+  background-color: var(--color-color5);
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--color-principal);
+  transition: background 0.3s, border 0.3s;
+}
+
+.fotos input[type="file"]:hover {
+  background-color: var(--color-color4);
+  color: white;
+  border-color: var(--color-color2);
+}
+
+.boton {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background: linear-gradient(to right, var(--color-color4), var(--color-color2));
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer; 
+}
+
+
+
+p.acciones {
+  display: flex;           
+  flex-direction: column;  
+  align-items: center;     
+  gap: 0.5rem;             
+  text-align: center;
+   
+}
+
+aside.acciones {
+  text-align: center; 
+}
+
+.cancelar,.iniciar, .enviar {
+  display:inline-block;
+  margin: 1rem;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  color: var(--color-color4);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-align:center;
+}
+
+a:hover {
+     text-decoration: underline;
+}
+
+.error {
+  border: 2px solid red;
+  background-color: #ffe5e5;
+}
+
+.resultadoRegistro {
+    background-color: var(--color-color5);
+    padding: 1.5em;
+    max-width: 450px;
+    margin: 2em auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    font-family: var(--fuente-contenido);
+}
+
+.resultadoRegistro h2 {
+    text-align: center;
+    color: var(--color-color4);
+    margin-bottom: 1em;
+}
+
+.resultadoRegistro ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.datosRegistro p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.botonVolver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: var(--color-color4);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.botonVolver:hover {
+    background-color: var(--color-color2);
+    text-decoration: none;
+}
+
+.error404 h3{
+    margin-bottom: 10px;
+    gap:20px;
+}

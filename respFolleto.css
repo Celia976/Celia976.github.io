@@ -1,0 +1,64 @@
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--color-color3); 
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  color: #333;
+}
+
+main p:first-of-type {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+main article {
+  background-color: var(--color-color5);
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+main ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+main ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-color5);
+}
+
+main ul li strong {
+  color: var(--color-color4); 
+}
+
+main h2 {
+  text-align: center;
+  color: var(--color-color2);
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+main a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--color-color4);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+main a:hover {
+  background-color: var(--color-color2);
+}

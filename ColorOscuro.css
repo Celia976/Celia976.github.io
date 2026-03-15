@@ -1,0 +1,78 @@
+:root {
+  --color-color5: #0e0e0e;      
+  --color-color8: #333;     
+  --color-color7: #3d3d3d;         
+  --color-color6: #f2f2f2;      
+  --color-color9: #bfbfbf;  
+  --color-color1: #ffffff; 
+  --color-color3: #1a1a1a;
+  --color-color2: #292929;  
+  --color-color4: #726e6e;  
+  --fuente-titulos: 'Lobster', cursive;
+  --fuente-contenido: 'Lato', sans-serif;
+}
+
+h2{
+   
+   color:var(--color-color8);
+}
+.datos h3{
+   color:var(--color-color3);
+}
+
+.datos li{
+   color:var(--color-color6);
+}
+
+.caracteristicas h3{
+   color:var(--color-color5);
+}
+
+.caracteristicas li{
+   color:var(--color-color6);
+}
+
+.miniaturas h3{
+   color:var(--color-color5);
+}
+
+.miniaturas li{
+   color:var(--color-color6);
+}
+.perfil-usuario {
+   background-color: var(--color-color3);
+}
+
+.menu-perfil {
+   background-color: var(--color-color8);
+}
+
+.panel-mensajes tr.enviado {
+    background-color: var(--color-color4); 
+}
+
+.panel-mensajes tr.recibido {
+    background-color:var(--color-color3); 
+}
+
+.confirmacion { 
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+#tarifas aside table tbody:hover { color: var(--color-color4);}
+
+.mainRespuestaSol p {
+   color: var(--color-color4);
+}
+
+.mainRespuestaSol h2 {
+   color: var(--color-color4);
+}
+
+.mainRespuestaSol article ul {
+   color: var(--color-color4);
+}
+
+.mainRespuestaSol article ul li{
+   color: var(--color-color8);
+}

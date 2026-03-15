@@ -1,0 +1,428 @@
+:root {
+   --color-color1: #00ffff;       /* acento / hover */
+   --color-color2:#000;
+   --color-color3:#202020;
+   --color-color4: #ffff00; 
+   --color-color5: #000000;       /* fondo */
+   --color-color6: #ffffff;
+   --color-color8: #ffffff;       /* borde */
+   --color-color10: #ff00ff;      /* foco */
+   --fuente-titulos: "Source Sans 3", sans-serif;
+   --fuente-contenido: 'Lato', sans-serif;
+
+}
+
+body {
+  background-color: var(--color-color5);
+  color: var(--color-color6);
+}
+
+main{
+      background-color: var(--color-color3)
+}
+
+main h3{
+  color: var(--color-color6);
+}
+
+main h2 {
+  color: var(--color-color6);
+}
+
+.anuncio-experto-destacado {
+  color: var(--color-color2);
+}
+
+.contenedor_anuncios{
+  color: var(--color-color2);
+}
+
+.panel-ultimos {
+  color: var(--color-color2);
+}
+
+header {
+    border-bottom: 3px solid var(--color-color1);
+}
+
+header h1 {
+  color: var(--color-color6);
+}
+
+header form button {
+  background-color: var(--color-color5);
+  color: var(--color-color2);
+}
+
+header form button:hover {
+  color: var(--color-color6);
+  background-color: var(--color-color1);
+}
+
+header nav a {
+  color: var(--color-color1);
+  text-decoration: underline;
+  font-weight: bold;
+  margin: 0 0.5em;
+}
+
+header nav a:hover{
+  color: var(--color-color1);
+  outline: 3px solid var(--color-color10);
+  outline-offset: 3px;
+}
+
+.nuevoAnuncio {
+  color: var(--color-color5);
+  background-color: var(--color-color4);
+}
+.nuevoAnuncio:hover {
+  color: var(--color-color5);
+  background-color: var(--color-color1);
+}
+
+aside.declaracion {
+  background-color: var(--color-color5);
+  color: var(--color-color6);
+  border-color: var(--color-color8);
+}
+aside.declaracion h2,
+aside.declaracion h1 {
+  color: var(--color-color1);
+}
+aside.declaracion p {
+  color: var(--color-color6);
+}
+aside.declaracion p::before {
+  color: var(--color-color6);
+}
+
+aside.explicacion {
+  background-color: var(--color-color5);
+  color: var(--color-color6);
+  border-color: var(--color-color8);
+}
+aside.explicacion h2,
+aside.explicacion h1 {
+  color: var(--color-color1);
+}
+aside.explicacion p {
+  color: var(--color-color6);
+}
+aside.explicacion p::before {
+  color: var(--color-color6);
+}
+
+.anuncio {
+  background-color: var(--color-color5);
+  border-color: var(--color-color8);
+}
+.anuncio:hover {
+  border-color: var(--color-color4);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3),
+              0 -6px 12px rgba(255, 255, 255, 0.2);
+}
+.anuncio h3 {
+  color: var(--color-color6);
+}
+.anuncio p {
+  color: var(--color-color6);
+}
+
+.Cincoanuncios button {
+  background-color: var(--color-color4);
+  color: var(--color-color5);
+}
+.Cincoanuncios button:hover {
+  background-color: var(--color-color1);
+}
+
+#labelBusquedaRapida {
+  border: none;       
+  box-shadow: none;    
+  padding: 0;          
+}
+
+#labelBusquedaRapida:hover {
+  border: none;        
+  box-shadow: none;
+}
+
+form fieldset {
+  border: 2px solid var(--color-color6);
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#btnBuscarFiltros {
+  background-color: var(--color-color1);
+  color: var(--color-color2);
+  border-radius: 8px;
+  border: 2px solid var(--color-color8);
+  padding: 0.6em 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#btnBuscarFiltros:hover {
+  background-color: var(--color-color10);
+}
+
+fieldset button {
+  background-color: var(--color-color1);
+  color: var(--color-color5);
+  border: 2px solid var(--color-color1);
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+fieldset button:hover {
+  background-color: var(--color-color10);
+  border-color: var(--color-color4);
+  box-shadow: 0 0 8px var(--color-color4);
+}
+
+label, select, input[type="submit"], input, textarea {
+  padding: 0.5em;
+  background-color: var(--color-color2);
+  color: var(--color-color6);
+  border: 2px solid var(--color-color8);
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+label:hover,
+select:hover,
+input[type="submit"]:hover,
+input:hover,
+textarea:hover,
+input[type="radio"]:hover {
+  border-color: var(--color-color10);
+  box-shadow: 0 0 6px var(--color-color10);
+}
+
+fieldset a {
+  color: var(--color-color1);
+}
+
+fieldset a:hover {
+  color: var(--color-color10);
+  text-decoration: underline;
+}
+
+.contenedor_resultados {
+  gap: 1em;    
+  padding: 1em; 
+}
+
+.resultados {
+  background-color: var(--color-color2);
+  border: 2px solid var(--color-color8);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.resultados:hover {
+  box-shadow: 0 6px 12px var(--color-color4);
+  border-color: var(--color-color4);
+}
+
+.resultados h3,
+.resultados p {
+  color: var(--color-color6);
+}
+
+.volverAtras {
+  background-color: var(--color-color1);
+  color: var(--color-color2);
+  margin: 2em 0.5em;
+  display: inline-block;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.volverAtras:hover {
+  background-color: var(--color-color10);
+  box-shadow: 0 0 6px var(--color-color4);
+  color: var(--color-color2);
+}
+
+.tarifas table{
+  margin: 2rem auto;
+  background-color: var(--color-color2);
+  color: var(--color-color6);
+  letter-spacing: 1px;
+  border: 2px solid var(--color-color3);
+}
+
+.tarifas thead th, .tarifas tfoot th {
+  color: var(--color-color6);
+  background-color: var(--color-color10);
+  padding: 15px;
+  text-align: center;
+  border-bottom: 2px solid var(--color-color3);
+}
+
+.tarifas tbody td {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid var(--color-color3);
+}
+
+.tarifas tbody tr:nth-child(odd) {
+  background-color: #111;
+}
+
+.tarifas tbody tr:nth-child(even) {
+  background-color: #222;
+}
+
+tbody tr:hover {
+  background-color: var(--color-color10);
+  color: #000;
+}
+
+.mainRespuestaSol {
+  border: 2px solid var(--color-color3);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(255,255,255,0.1);
+  color: var(--color-color6);
+}
+
+.mainRespuestaSol p:first-of-type {
+  color: var(--color-color6);
+}
+
+.mainRespuestaSol{
+  background-color: var(--color-color3);
+  color: var(--color-color6)
+}
+
+.vuelta {
+  color: var(--color-color2);
+}
+
+.vuelta:hover{
+  background-color: var(--color-color1);
+  color: var(--color-color2);
+}
+
+.perfil-usuario {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-color3);
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255,255,255,0.2); 
+    gap: 1.5em;
+    border: 2px solid var(--color-color6);
+}
+
+.info-usuario p {
+    color: var(--color-color6);
+}
+
+.menu-perfil {
+    background-color: var(--color-color3);
+    box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+    border: 2px solid var(--color-color6);
+}
+
+.menu-perfil li a {
+    text-decoration: none;
+    color: var(--color-color2);
+    background-color: var(--color-color4);
+}
+
+.menu-perfil li a:hover {
+    text-decoration: none;
+    color: var(--color-color2);
+    background-color: var(--color-color1);
+}
+
+.panel-mensajes{
+  border: 2px solid var(--color-color6);
+}
+
+.panel-mensajes td, .panel-mensajes th {
+  border-bottom: 1px solid var(--color-color6);
+}
+
+.panel-mensajes tr.enviado {
+    background-color: var(--color-color4);
+    color: var(--color-color2); 
+}
+
+.panel-mensajes tr.recibido {
+    background-color:var(--color-color1); 
+    color: var(--color-color2); 
+}
+
+.panel-mensajes tr:hover {
+  background-color: var(--color-color10);
+  color: var(--color-color2);
+}
+
+.acciones a.boton {
+  border: 2px solid var(--color-color2);
+  transition: all 0.3s ease;
+}
+
+.acciones a.boton:hover {
+  color: var(--color-color2);
+}
+
+.confirmacion {
+  border: 2px solid var(--color-color6);
+}
+
+.datos {
+  color: var(--color-color6);
+}
+
+.caracteristicas {
+  color: var(--color-color6);
+}
+
+.datos h3{
+  color: var(--color-color6);
+}
+
+.caracteristicas h3{
+  color: var(--color-color6);
+}
+
+
+.miniaturas a:hover{
+  background-color: var(--color-color1);
+}
+
+.contactar {
+  color: var(--color-color2);
+  background-color: var(--color-color4);
+}
+
+.atras {
+  color: var(--color-color2);
+  background-color: var(--color-color4);
+}
+
+.contactar:hover {
+  color: var(--color-color2);
+  background-color: var(--color-color1);
+}
+
+.atras:hover {
+  color: var(--color-color2);
+  background-color: var(--color-color1);
+}
+
+ footer {
+  border-top: 3px solid var(--color-color1);
+}
+
+footer p:hover{
+  color: var(--color-color1);
+  outline: 3px solid var(--color-color10);
+  outline-offset: 3px;
+}
+
+

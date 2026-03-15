@@ -1,0 +1,27 @@
+[
+  {
+    "categoria": "Compra",
+    "importancia": "Baja",
+    "descripcion": "Haz una lista de deseos y necesidades de lo que necesitas para ser feliz en tu nueva vivienda."
+  },
+  {
+    "categoria": "Venta",
+    "importancia": "Baja",
+    "descripcion": "Si no tienes prisa por vender, primero fija un precio de venta alto y baja el precio poco a poco para maximizar tu beneficio."
+  },
+  {
+    "categoria": "Compra",
+    "importancia": "Media",
+    "descripcion": "Hazte un cuadro comparativo con todas las viviendas que has visitado."
+  },
+  {
+    "categoria": "Venta",
+    "importancia": "Media",
+    "descripcion": "Limpia, repasa la pintura, solventa los desperfectos, mejora algunas estructuras, etc."
+  },
+  {
+    "categoria": "Compra",
+    "importancia": "Alta",
+    "descripcion": "Si compras una vivienda con tu pareja, con ella podrás cortar, con la hipoteca no."
+  }
+]

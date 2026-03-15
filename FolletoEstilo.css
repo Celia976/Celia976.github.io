@@ -1,0 +1,298 @@
+main {
+    background-color: var(--color-color5);
+}
+
+main h2 {
+    text-align: center;           
+  color: var(--color-color4); 
+  font-size: 1.8rem;           
+  margin-bottom: 1rem;          
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); 
+}
+
+main p {
+  text-align: center;          
+  color: var(--color-color6); 
+  font-size: 1.1rem;            
+  margin-bottom: 1rem;        
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+main section h2 {
+  text-align: center;           
+  color: var(--color-color6); 
+  font-size: 1.8rem;            
+  margin-bottom: 1rem;          
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); 
+}
+
+main section{
+  margin-bottom: 2em;
+  padding: 0.3em;
+  font-size: 0.8em;
+}
+
+/* Contenedor de todas las filas de extras */
+.contenedor-extras {
+  display: flex;
+  flex-direction: column;  
+  gap: 0.6rem;              /* espacio vertical entre características */
+  max-width: 90%;
+  margin: 0 auto;           /* centrado horizontal */
+}
+
+/* Cada característica: texto a la izquierda, checkbox a la derecha */
+.fila-extra {
+  display: flex;
+  justify-content: space-between;  /* 🔹 separa nombre y botón */
+  align-items: center;
+  background-color: var(--color-color3);
+  border: 1px solid var(--color-color5);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius);
+}
+
+/* Estilo del texto (nombre de la característica) */
+.fila-extra label {
+  color: var(--color-color4);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Estilo del checkbox */
+.fila-extra input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+  accent-color: var(--color-color4); /* 💡 usa tu color principal */
+}
+
+
+.campos {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--color-color3);
+  border-radius: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 2px solid var(--color-color4);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--color-color4);
+  padding: 0 5px;
+}
+
+form p label {
+  display: block;
+  font-weight: bold;
+  text-align:left;
+  margin-top: 1rem;
+  color: var(--color-color4);  
+}
+
+form p input, form p select, form p textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid var(--color-color5);
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+form p button {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background: linear-gradient(to right, var(--color-color4), var(--color-color2));
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer; 
+}
+
+.boton-mostrar {
+    background-color: var(--color-color4);
+    color: var(--color-color6);
+    border: none;
+    margin-top:1rem;
+    border-radius: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-mostrar:hover {
+    background-color: var(--color-color2);
+}
+
+
+input[type="color"] {
+  width: 50px;         
+  height: 50px;       
+  padding: 0;          
+  border: 1px solid var(--color-color5);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  width: auto;  
+  margin-right: 0.3rem;   
+  vertical-align: middle; 
+  cursor: pointer;
+  
+}
+
+input[type="checkbox"] {
+  width: auto;  
+  margin-right: 0.3rem;   
+  vertical-align: middle; 
+  cursor: pointer;
+  
+}
+
+p:has(input[type="color"]) {
+  text-align: left; 
+}
+
+p.rad1, p.rad2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; 
+  flex-wrap: wrap; 
+  cursor: pointer;
+} 
+
+p.acciones {
+  text-align: center; 
+   
+}
+
+.cancelar {
+  display:inline-block;
+  margin: 1rem;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  color: var(--color-color4);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-align:center;
+}
+
+a:hover {
+     text-decoration: underline;
+}
+
+
+ table {
+  table-layout: fixed;
+  width: 80%;
+  margin : 0 auto;
+  border-collapse: collapse;
+  background-color: var(--color-color5);
+  letter-spacing: 1px;
+}
+
+thead th, tfoot th {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background: linear-gradient(to bottom, var(--color-color2), var(--color-color4));
+  padding: 15px;
+  text-align: center;
+}
+
+tfoot td {
+  text-align: right;
+  padding: 15px;
+}
+
+tbody td {
+  text-align: center;
+  padding: 15px;
+}
+
+
+.tabla-costes {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-costes th,
+.tabla-costes td {
+  width: calc(100% / 6); /* 6 columnas iguales */
+  text-align: center;
+  padding: 15px;
+  border: 1px solid var(--color-color5);
+}
+
+
+tbody tr:nth-child(odd) { background-color: var(--color-color2); }
+tbody tr:nth-child(even) { background-color: var(--color-color3); }
+
+
+tbody tr:hover { background-color: white; }
+
+
+@media screen and (min-width: 1025px) {
+
+  main {
+    display: flex;
+    flex-direction: column; 
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1.2rem; 
+  }
+
+  main > h2,
+  main > p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  /* 🔹 Contenedor principal: dos columnas con espacio entre ellas */
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem; /* 💡 más espacio entre columnas */
+  }
+
+  /* 🔹 Columna izquierda: bloque con las dos tablas */
+  .bloque-tablas {
+    flex: 0.8; /* 💡 reduce su tamaño (antes 1.2) */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* espacio vertical entre las dos tablas */
+  }
+
+  /* 🔹 Formulario a la derecha */
+  .contenedor > form.campos {
+    flex: 1.2; /* 💡 el formulario ocupa más espacio relativo */
+    max-width: 50%;
+    align-self: flex-start;
+  }
+
+  /* 🔹 Ajuste visual de las tablas */
+  #tarifas, #tablaCostes {
+    width: 100%;
+  }
+
+  #tarifas table,
+  #tablaCostes table {
+    width: 100%;
+  }
+}

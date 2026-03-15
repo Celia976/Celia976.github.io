@@ -1,0 +1,516 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nuevoAnuncio {
+    display: block;                     
+    width: fit-content;                 
+    text-decoration: none;
+    color: var(--color-color4);
+    font-weight: bold;
+    text-align: center;                 
+    padding: 0.5em 1em;                  
+    background-color: var(--color-color1);
+    border-radius: 8px;
+    margin: 2em auto;                   
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nuevoAnuncio:hover {
+    color: white;
+    background-color: var(--color-color4);
+}
+
+.saludo-usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;                /* centra verticalmente en toda la pantalla */
+  font-size: 1.5rem;
+  color: var(--color-color4);
+  background-color: var(--color-color1);
+  border: 2px solid var(--color-color5);
+  border-radius: 15px;
+  width: 60%;
+  margin: 1em auto;              /* centra horizontalmente */
+  text-align: center;
+  box-shadow: 0 4px 12px var(--color-color2);  
+  line-height: 1.5;
+}
+
+.saludo-usuario2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 60%;
+  margin: 10px auto 40px auto; /* espacio debajo del saludo principal */
+  padding: 15px;
+  background-color: var(--color-color1); /* gris claro */
+  border: 1px solid  var(--color-color2);
+  border-radius: 10px;
+  color: var(--color-color4);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 4px 12px var(--color-color2);
+}
+
+.panel-ultimos {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--color-color2);
+}
+
+.panel-ultimos h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.lista-ultimos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mini-anuncio {
+  width: 150px;
+  text-align: center;
+  background-color: var(--color-color5);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--color-color2);
+}
+
+.mini-anuncio img {
+  width: 90%;
+  height: 100px;
+  margin-top: 0.5em;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: transform 0.2s ease;
+}
+
+.mini-anuncio img:hover {
+  transform: scale(1.05);
+}
+
+.mini-anuncio p {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--color-color6);
+}
+
+.mini-anuncio a {
+  text-decoration: none;
+  color: var(--color-color4);
+}
+
+.mini-anuncio a:hover {
+  text-decoration: none;
+  color: var(--color-color1);
+}
+
+main h2 {
+    text-align: center;
+    font-family: var(--fuente-contenido);
+    color: var(--color-color6);
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+aside.declaracion {
+  background-color: var(--color-color1);
+  color: var(--color-color6);
+  font-family: var(--fuente-contenido);
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 3em auto;
+  padding: 2em 3em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  line-height: 1.7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+aside.declaracion:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+aside.declaracion h2,
+aside.declaracion h1 {
+  font-family: var(--fuente-titulos);
+  color: var(--color-color4);
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+aside.declaracion p {
+  color: var(--color-color6);
+  font-size: 1.05em;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+aside.declaracion p::before {
+  content: "• ";
+  color: var(--color-color4);
+  font-weight: bold;
+}
+
+
+aside.explicacion {
+  background-color: var(--color-color1);
+  color: var(--color-color6);
+  font-family: var(--fuente-contenido);
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 3em auto;
+  padding: 2em 3em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  line-height: 1.7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+aside.explicacion:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+aside.explicacion h2,
+aside.explicacion h1 {
+  font-family: var(--fuente-titulos);
+  color: var(--color-color4);
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+aside.explicacion p {
+  color: var(--color-color6);
+  font-size: 1.05em;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+aside.explicacion p::before {
+  content: "• ";
+  color: var(--color-color4);
+  font-weight: bold;
+}
+
+.Cincoanuncios {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 2em 0;
+}
+
+.contenedor_anuncios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px); /* cada anuncio 400px */
+    gap: 2em;
+    justify-content: center; /* centra los anuncios si no llenan la fila */
+    grid-auto-flow: row;
+}
+
+.anuncio {
+    background-color: var(--color-color5);
+    border-radius: 10px;
+    border: 2px solid var(--color-color6);
+    padding: 1em;
+    width: 400px; /* fijo */
+    text-align: left;
+    box-sizing: border-box;
+}
+
+
+.anuncio:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 -6px 12px rgba(0, 0, 0, 0.2);
+  border-color: var(--color-color4);
+}
+
+.anuncio-enlace {
+    text-decoration: none;
+    display: block;
+}
+
+.anuncio img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.3em;
+}
+
+.anuncio h3 {
+    color: var(--color-color6);
+    margin-top: 0.3em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.anuncio p {
+    color: var(--color-color6);
+    margin-top: 0.3em;
+    font-size: 0.9em;
+}
+
+.Cincoanuncios button {
+    background-color: var(--color-color2);
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+    
+}
+
+.Cincoanuncios button:hover {
+    background-color: var(--color-color4);
+}
+
+/* .prev {
+    position: absolute;
+    left: 0;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+} */
+
+.error404 {
+    background-color: var(--color-color5);
+    padding: 1.5em;
+    max-width: 450px;
+    margin: 2em auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    font-family: var(--fuente-contenido);
+}
+
+.error404 h2 {
+    text-align: center;
+    color: var(--color-color4);
+    margin-bottom: 1em;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: var(--color-color4);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.volver:hover {
+    background-color: var(--color-color2);
+    text-decoration: none;
+}
+
+.botonAñadirFoto {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: var(--color-color4);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.botonAñadirFoto:hover {
+    background-color: var(--color-color2);
+    text-decoration: none;
+}
+
+.resultadoRegistro{
+  justify-content: center;
+  background-color: var(--color-color1);
+  margin: 1em;
+  padding: 1em;
+}
+
+.resultadoRegistro h2{
+  text-align: center;
+  font-family: var(--fuente-titulos);
+  color: var(--color-color2);
+}
+
+.resultadoRegistro p{
+  color: black;
+  text-align: center;
+  font-family: var(--fuente-contenido);
+  margin-bottom: 1em;
+}
+
+.resultadoRegistro p a{
+  color: var(--color-color5);
+  text-align: center;
+  font-family: var(--fuente-contenido);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.resultadoRegistro p a:hover{
+  font-weight:bold;
+  color: var(--color-color4);
+  text-align: center;
+  font-family: var(--fuente-contenido);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Contenedor principal de anuncios de expertos */
+.anuncios-expertos {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--color-color2);
+  text-align: center;
+  background-color: #ddfff5;
+}
+
+/* Título */
+.anuncios-expertos h2 {
+  margin-bottom: 1em;
+  font-size: 2.5em;
+  color: var(--color-color4);
+}
+
+/* Contenedor de los artículos */
+.anuncios-expertos .contenedor_anuncios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em; /* espacio entre artículos */
+}
+
+/* Cada artículo */
+.anuncios-expertos .anuncio-experto-destacado {
+  width: 220px;        /* ancho reducido */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5em;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: transform 0.2s;
+}
+
+.consejosCompraVenta .consejos{
+  width: 220px;        /* ancho reducido */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5em;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: transform 0.2s;
+}
+
+.anuncios-expertos .anuncio-experto-destacado:hover {
+  transform: scale(1.03); /* efecto ligero al pasar el ratón */
+}
+
+/* Imagen dentro del artículo */
+.anuncios-expertos .anuncio-experto-destacado img {
+  width: 100%;       /* se ajusta al ancho del artículo */
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+}
+
+/* Título del anuncio */
+.anuncios-expertos .anuncio-experto-destacado h3 {
+  font-size: 1em;
+  margin: 0.3em 0;
+  color: var(--color-color3);
+}
+
+/* Información del experto */
+.anuncios-expertos .expert-info,
+.anuncios-expertos .expert-quote,
+.anuncios-expertos p {
+  font-size: 0.85em;
+  margin: 0.2em 0;
+}
+
+
+
+
+@media screen and (min-width: 485px) and (max-width: 1024px) {
+
+  main h2 {
+    font-size: 2.2em;
+  }
+
+  .Cincoanuncios {
+    max-width: 95%;
+    gap: 3em;
+  }
+
+  .contenedor_anuncios {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    .anuncio {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+
+  .Cincoanuncios{
+    margin: 1em;
+    max-width: 2000px;
+  }
+  .contenedor_anuncios {
+        grid-template-columns: repeat(auto-fill, 450px);
+        gap: 1.5em;
+    }
+    .anuncio {
+        width: 450px;
+  }
+
+  .Cincoanuncios button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    font-size: 2em;
+    background-color: var(--color-color2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.3em 0.5em;
+    border-radius: 5px;
+  }
+
+  .Cincoanuncios .ant {
+    left: -1.5em;
+  }
+
+  .Cincoanuncios .post {
+    right: -1.5em;
+  }
+
+}

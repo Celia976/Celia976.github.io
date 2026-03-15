@@ -1,0 +1,7 @@
+h1 {
+    font-family: 'Lobster', cursive;
+}
+
+h2, h3, p, label, a, button {
+    font-family: 'Lato', sans-serif;
+}

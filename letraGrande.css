@@ -1,0 +1,44 @@
+
+
+:root {
+  font-size: 120%;
+}
+
+body {
+  line-height: 1.8;
+}
+
+h1, h2, h3 {
+  font-size: 1.4em;  
+  line-height: 1.4;
+}
+
+p, label, input, select, textarea, button, a, li {
+  font-size: 1.15em;
+  line-height: 1.6;
+}
+
+form p input,
+form p select,
+form p textarea {
+  font-size: 1.1em;
+  padding: 0.9rem;
+}
+
+button, .boton, .enviar, .iniciar, .cancelar {
+  font-size: 1.15em;
+  padding: 1rem 1.2rem;
+}
+
+header a, nav a {
+  font-size: 1.1em;
+}
+
+table, th, td {
+  font-size: 1.1em;
+}
+
+ul, ol {
+  font-size: 1.1em;
+  line-height: 1.7;
+}
